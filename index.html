@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Cryptid Atlas</title>
+    <link rel="stylesheet" href="main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fontdiner+Swanky&family=Winky+Sans:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div id="container">
+      
+    <header><h1 class="fontdiner-swanky-regular">The Cryptid Atlas</h1></header>
+<nav>
+  <li><a href="#home"><h2><b>Home</b></h2></a></li>
+  <li><a href="encyclopedia.html"><h2><b>Encyclopedia</b></h2></a></li>
+  <li><a href="#map"><h2><b>Map</b></h2></a></li>
+  <li><a href="#about"><h2><b>About</b></h2></a></li>
+  <li><a href="#bugs"><h2><b>Bugs</b></h2></a></li>
+</nav>
+
+<main>
+    <div class="background">
+   </div>
+
+<section>
+    <div class="bigfoot-image">
+  <img src="images/bigfootwaving.png" alt="Bigfoot" width="350">
+    </div>
+  <div class="bigfoot-text">
+    <h4>Hi there! I'm Bigfoot. Wanna explore the world of cryptids with me?</h4>
+  </div>
+
+<article class="cryptid-facts"> 
+
+  <div class="fact-box clickable">
+    <div class="fact-inner">
+      <div class="fact-font">
+    <h3>What is a Cryptid?</h3>
+  </div>
+   <div class="fact-back">
+<p>A cryptid is a creature that people say they have seen, but scientists aren’t sure if it’s real. Stories usually come from myths, old tales, or mysterious sightings.</p>
+ </div>
+ </div>
+ </div>
+
+<div class="fact-box clickable">
+   <div class="fact-inner">
+      <div class="fact-font">
+    <h3>Famous Cryptids</h3>
+    </div>
+   <div class="fact-back">
+    <p>Some of the most famous cryptids are <strong>Bigfoot</strong> in North America, the <strong>Loch Ness Monster</strong> in Scotland, and the <strong>Chupacabra</strong> in Hispanic America.</p>
+  </div>
+ </div>
+ </div>
+
+
+  <div class="fact-box clickable">
+     <div class="fact-inner">
+      <div class="fact-font">
+    <h3>What is a myth?</h3>
+    </div>
+<div class="fact-back">
+    <p>A <stron>myth</strong> is a special kind of story people told to explain the world, often with magical creatures, powerful gods, or amazing adventures. </p>
+ </div>
+ </div>
+  </div>
+</article>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<footer>Copyright Jacqueline Bedson 2025</footer>
+<script>
+  const factBoxes = document.querySelectorAll(".fact-box.clickable");
+
+  factBoxes.forEach(box => {
+    box.addEventListener("click", () => {
+      box.classList.toggle("flipped");
+    });
+  });
+</script>
+
+</body>
+</html>
