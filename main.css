@@ -90,6 +90,7 @@ h4{
 
 h3{
   font-family: Arial, Helvetica, sans-serif;
+  margin-top: auto;
 }
 .cryptid-text {
   position: absolute;
@@ -115,6 +116,8 @@ p{
   max-width: 900px;
   padding: 20px;             
   background-color: rgb(61, 141, 122);  
+  align-items: stretch;
+  flex-wrap: wrap;
 }
 
 .fact-box {
@@ -202,7 +205,10 @@ table, th, td {
   border-collapse: collapse;
   font-family: Arial, Helvetica, sans-serif;
   text-align: center;
-  margin-top: 30px;
+  margin-top: auto;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
 }
 
 ul li{
@@ -210,12 +216,14 @@ ul li{
   margin-bottom:10px;
 }
 
-.iframe-container{
-display: flex;
-position:relative;
-margin-left:350px;
-border: solid 3px;
+.bug-container {
+  display:relative;
+  background-color: #f1f1f1;
+  padding:10px;
+  margin-top: auto;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
 }
+
 
 .bug-form {
   background-color: rgb(61, 141, 122);
@@ -254,7 +262,7 @@ input, select, textarea {
 }
 
 button {
-  background-color: #88c0f2;
+  background-color: rgb(136, 192, 242);
   color: rgb(0, 0, 0);
   border: none;
   padding: 0.75rem 1.5rem;
@@ -268,8 +276,36 @@ button {
 }
 
 button:hover {
-  background-color: #2a5d84;
+  background-color: rgb(251, 255, 0);
 }
 
+.flex-container {
+  display: flex;
+  flex-flow: row wrap;
+  align-items: stretch;
+  background-color: #f1f1f1;
+}
+
+.flex-container > div {
+  background-color: rgb(61, 141, 122);
+  color: white;
+  margin: 5px;
+  font-size: 18px;
+  padding: 10px 10px 0 10px;
+  font-family: Arial, Helvetica, sans-serif;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+	@media (max-width: 1019px){
+		.container{width:90%;}
+		
+		.makeMeStack{
+			flex:100%;
+		}
+	}
+
+  .flex-container ul {
+  list-style-type: circle;
+  margin-left: 20px;
+}
 
   

@@ -1,0 +1,60 @@
+@charset "UTF=8";
+/* CSS Document */ 
+*{
+    box-sizing: border-box;
+}
+#container{
+    width: 900px;
+    margin: auto;
+}
+
+body{
+    background-color: rgb(179, 216, 168);
+}
+
+.fontdiner-swanky-regular {
+  font-family: "Fontdiner Swanky", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+p{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body, .ui-tabs, .ui-widget {
+  font-family:Arial, Helvetica, sans-serif
+}
+
+/* Tab container */
+.ui-tabs .ui-tabs-nav li a {
+  background-color: rgb(136, 192, 242);
+  color: rgb(0, 0, 0);
+  border-radius: 8px 8px 0 0;
+}
+
+/* Active tab style */
+.ui-tabs .ui-tabs-nav li.ui-tabs-active a {
+  background-color: rgb(251, 255, 0);
+  color: rgb(61, 141, 122);
+  font-weight: bold;
+}
+
+/* Tab panel content */
+.ui-tabs .ui-tabs-panel {
+  background-color: rgb(61, 141, 122);
+  color: rgb(255, 255, 255);
+  border: 2px solid rgb(163, 209, 198);
+  padding: 1em;
+  border-radius: 0 0 8px 8px;
+}
+
+.ui-widget-header {
+  background: rgb(179, 216, 168); 
+  border: none; 
+}
+
+.ui-tabs .ui-tabs-nav li {
+  border: 1px solid rgb(255, 255, 255); 
+  background: rgb(61, 141, 122); 
+}
