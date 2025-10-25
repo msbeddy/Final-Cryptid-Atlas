@@ -11,11 +11,15 @@
 body{
     background-color: rgb(179, 216, 168);
 }
+@font-face {
+  font-family: "BD Cartoon Shout";
+  src: url(BD_Cartoon_Shout.ttf) format(truetype);
+}
 
-.fontdiner-swanky-regular {
-  font-family: "Fontdiner Swanky", serif;
-  font-weight: 400;
-  font-style: normal;
+.BDCartoonShout{
+   font-family: "BD Cartoon Shout";
+  src: url(BD_Cartoon_Shout.ttf) format(truetype);
+  font-size:50px;
 }
 
 p{

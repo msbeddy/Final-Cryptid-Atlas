@@ -3,81 +3,113 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cryptid Encyclopedia</title>
+    <title>Cryptid Library</title>
     <link rel="stylesheet" href="main.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Fontdiner+Swanky&family=Winky+Sans:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
-</head>
 <body>
     <div id="container">
       
-    <header><h1 class="fontdiner-swanky-regular">The Cryptid Atlas</h1></header>
+    <header><h1 class="BDCartoonShout">The Cryptid Library</h1></header>
 <nav>
   <li><a href="index.html"><h2><b>Home</b></h2></a></li>
-  <li><a href="encyclopedia.html"><h2><b>Encyclopedia</b></h2></a></li>
+  <li><a href="encyclopedia.html"><h2><b>Library</b></h2></a></li>
   <li><a href="explore.html"><h2><b>Explore More</b></h2></a></li>
   <li><a href="#about"><h2><b>About</b></h2></a></li>
   <li><a href="contact.html"><h2><b>Bugs</b></h2></a></li>
 </nav>
 
- <div class="container">
-<div class="flex-container">
-  <div class="makeMeStack" style="flex-grow: 2"><h3>Curious where cryptids are spotted? Choose a region to explore legendary creatures!</h3> 
-    <ul>
-  <li>North America</li>
-  <li>South America</li>
-  <li>Europe</li>
-  <li>Asia</li>
-</ul>
+<div class="container-bigfootreading">
+  <img src="images/bigfootreading.png" alt="Bigfoot Reading">
 </div>
 
-<table style="width:100%">
- <tr>
-    <th style="width:25%">Cryptid</th>
-    <th style="width:25%">Region</th>
-    <th>Description</th>
-    <th>Image</th>
-  </tr>
-  <tr>
-    <td>Bigfoot</td>
-    <td></td>
-    <td></td>
-    <td><img src="images/bigfootidle.png" alt="Bigfoot" height="300" width="250"></td>
-  </tr>
-  <tr>
-    <td>Chupacabra</td>
-    <td></td>
-    <td></td>
-    <td><img src="images/chupacabra.png" alt="Chupacabra"  height="300" width="250"></td>
-  </tr>
-  <tr>
-    <td>El Cucuy</td>  
-    <td></td>
-    <td></td>
-    <td><img src="images/cucuyboogeyman.png" alt="El Cucuy" height="300" width="250"></td>
-  </tr>
-  <tr>
-    <td>The Lochness Monster</td>  
-    <td></td>
-    <td></td>
-    <td><img src="images/lochnessmonster.png" alt="Lochness Monster" height="300" width="250"></td>
-  </tr>
-  <tr>
-    <td>Werewolf</td>  
-    <td></td>
-    <td></td>
-    <td><img src="images/werewolf.png" alt="Werewolf" height="300" width="250"></td>
-  </tr>
-  <tr>
-    <td>Tatzelwurm</td>  
-    <td></td>
-    <td></td>
-    <td></td>
-  </tr>
-</table>
+
+<section class="encyclopedia-intro">
+  <h1>Welcome to the Cryptid Library</h1>
+  <p>
+    Step into the world of myths, mysteries, and maybe-monsters!  
+    The <strong>Cryptid Library</strong> is your guide to the strange creatures whispered about in the shadows of forests, lakes, and moonlit skies.  
+    From the legendary Bigfoot to the eerie El Chupacabra, each entry tells a story, part folklore, part curiosity, and part adventure.  
+    So grab your flashlight and explore the legends that make our world a little weirder (and a lot more fun).
+  </p>
+</section>
 
 
-    
+<div class="container">
+  
+  <div style="position: relative;">
+    <img src="images/bigfootbook.png" alt="Bigfoot">
+    <div class="title">Bigfoot</div>
+  </div>
+
+   <div style="position: relative;">
+    <img src="images/cucuybook.png" alt="El Cucuy">
+    <div class="title">El Cucuy "Boogeyman"</div>
+  </div>
+
+  <div style="position: relative;">
+    <img src="images/werewolfbook.png" alt="Werewolf">
+    <div class="title">Werewolf</div>
+  </div>
+
+   <div style="position: relative;">
+    <img src="images/lochnessbook.png" alt="Lochness Monster">
+    <div class="title">The Lochness Monster</div>
+  </div>
+
+   <div style="position: relative;">
+    <img src="images/chupacabrabook.png" alt="El Chupacabra">
+    <div class="title">El Chupacabra</div>
+  </div>
+
+  <div style="position: relative;">
+    <img src="images/tatzelwurmbook.png" alt="Tatzelwurm">
+    <div class="title">Tatzelwurm</div>
+  </div>
+
+</div>
+
+
+<div class="location-section">
+
+<p><b>Click the button to get your coordinates.</b></p>
+
+<button onclick="getLocation()"><strong>Try It</strong></button>
+
+<p id="demo"></p>
+
+<script>
+const x = document.getElementById("demo");
+
+function getLocation() {
+  if (navigator.geolocation) {
+    navigator.geolocation.getCurrentPosition(success, error);
+  } else { 
+    x.innerHTML = "Geolocation is not supported by this browser.";
+  }
+}
+
+function success(position) {
+  x.innerHTML = "Latitude: " + position.coords.latitude + 
+  "<br>Longitude: " + position.coords.longitude;
+}
+
+function error() {
+  alert("Sorry, no position available.");
+}
+</script>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+<footer>Copyright Jacqueline Bedson 2025</footer>
+
 </body>
 </html>
