@@ -391,7 +391,7 @@ input, select, textarea {
   width: 100%;
   padding: 0.5rem;
   margin-top: 0.25rem;
-  border: 1px solid #ccc;
+  border: 1px solid rgb(204, 204, 204);
   border-radius: 8px;
   font-size: 1rem;
   font-family: Arial, Helvetica, sans-serif;
@@ -579,6 +579,52 @@ flex: 0 0 auto;
 
 .artist-img img {
   border-radius: 10px;
+}
+
+.explore-container{
+  display:flex;
+  flex-direction: row;
+  max-width: 900px;
+  justify-content:left;
+  align-items: flex-start;
+  margin: 40px auto;
+  background-color: rgb(134, 223, 253);
+  border: 3px solid rgb(0, 105, 0);
+  border-radius: 15px;
+  padding: 20px;
+  text-align: left;
+  flex-wrap: wrap;
+  font-family: Arial, Helvetica, sans-serif;
+  color: rgb(89, 58, 46);
+  font-size:large;
+}
+
+.explore-container h1{
+  font-family: 'BD Cartoon Shout';
+  font-size: 2.0rem;
+  color: rgb(255, 255, 255);
+  background-color: rgb(0, 105, 0);
+  border-radius: 5px;
+  height: 50px;
+  padding: 8px;
+  width: 600px;
+  margin:auto;
+}
+
+.explore-container div{
+background-color: rgb(0, 105, 0);
+width:fit-content;
+margin:5px;
+padding: 10px;
+text-align:left;  
+font-size:medium;
+font-family: Arial, Helvetica, sans-serif;
+color:rgb(255, 255, 255);
+border-radius:10px;
+}
+
+.explore-container a{
+  color: rgb(255, 255, 255);
 }
 
 
